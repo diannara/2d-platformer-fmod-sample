@@ -1,0 +1,14 @@
+{
+    "name": "TIGD.Platformer.Controllers",
+    "rootNamespace": "TIGD.Platformer.Controllers",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d64219da-a992-4dc4-bf63-279dffb2d3b2}">
+		<property name="assetPath">
+			<value>spaceEngine_000.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcba70a8-4f2c-409c-bf7e-74ccfb508c65}</destination>
+		</relationship>
+	</object>
+</objects>

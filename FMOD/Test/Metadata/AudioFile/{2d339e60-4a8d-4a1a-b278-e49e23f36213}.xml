@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2d339e60-4a8d-4a1a-b278-e49e23f36213}">
+		<property name="assetPath">
+			<value>engineCircular_003.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcba70a8-4f2c-409c-bf7e-74ccfb508c65}</destination>
+		</relationship>
+	</object>
+</objects>

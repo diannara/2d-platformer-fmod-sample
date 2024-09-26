@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d1ee40eb-f863-4c6a-b5db-339a83a7cbea}">
+		<property name="assetPath">
+			<value>thrusterFire_001.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcba70a8-4f2c-409c-bf7e-74ccfb508c65}</destination>
+		</relationship>
+	</object>
+</objects>

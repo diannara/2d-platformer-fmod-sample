@@ -1,0 +1,18 @@
+{
+    "name": "TIGD.Platformer.Controllers.Editors",
+    "rootNamespace": "TIGD.Platformer.Controllers.Editors",
+    "references": [
+        "GUID:47b0c9f6e9495684bbdb1e79ad372d93"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

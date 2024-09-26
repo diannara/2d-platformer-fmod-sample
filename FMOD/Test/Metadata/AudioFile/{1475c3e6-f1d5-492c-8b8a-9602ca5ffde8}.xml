@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1475c3e6-f1d5-492c-8b8a-9602ca5ffde8}">
+		<property name="assetPath">
+			<value>laserRetro_002.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.25505668934240361</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcba70a8-4f2c-409c-bf7e-74ccfb508c65}</destination>
+		</relationship>
+	</object>
+</objects>
