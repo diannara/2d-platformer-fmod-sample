@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afaa6dc7be9f2114f8a1d13635dbb06c, type: 3}
+  m_Name: GameScene_CommonAssets
+  m_EditorClassIdentifier: 
+  DisplayName: Common Assets
+  Description: Contains common assets all scenes use like the Camera and EventSystem
+  SceneReference:
+    m_AssetGUID: 99755679db3c97a4697a9471fbdf49c6
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  IsPersistentScene: 1
+  IsActiveScene: 0

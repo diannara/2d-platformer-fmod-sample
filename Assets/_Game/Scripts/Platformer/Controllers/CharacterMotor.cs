@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace TIGD.Platformer.Controllers
 {
@@ -7,6 +8,9 @@ namespace TIGD.Platformer.Controllers
     [RequireComponent(typeof(ICharacterController))]
     public class CharacterMotor : MonoBehaviour
     {
+        public event Action OnJump;
+        public event Action OnLand;
+
         [Header("Physics")]
         [SerializeField] private LayerMask _collisionLayer;
         [SerializeField] private float _gravity = 9.81f;
@@ -77,6 +81,7 @@ namespace TIGD.Platformer.Controllers
                 _canUseCoyoteTime = true;
                 _canUseBufferedJump = true;
                 _endedJumpEarly = false;
+                OnLand?.Invoke();
             }
             else if(_isGrounded && !hitGround)
             {
@@ -97,6 +102,8 @@ namespace TIGD.Platformer.Controllers
             _canUseCoyoteTime = false;
 
             _currentVelocity.y = _jumpForce;
+
+            OnJump?.Invoke();
         }
 
         private void FixedUpdate()

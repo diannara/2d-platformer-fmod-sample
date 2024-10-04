@@ -710,6 +710,7 @@ MonoBehaviour:
   - Character Sounds
   - Enemy
   - Items
+  - Music
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

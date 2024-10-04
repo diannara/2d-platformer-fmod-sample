@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Widget - Heart" src="project://database/Assets/_Game/UI%20Toolkit/Widgets/Heart/Widget%20-%20Heart.uxml?fileID=9197481963319205126&amp;guid=526790fc6d46e8443a4e1679b4a0ce0a&amp;type=3#Widget - Heart" />
+    <Style src="project://database/Assets/_Game/UI%20Toolkit/Widgets/Healthbar/Widget%20-%20Healthbar.uss?fileID=7433441132597879392&amp;guid=a744832868251fc468a435bc9b958055&amp;type=3#Widget - Healthbar" />
+    <engine:VisualElement name="healthbar" style="flex-grow: 1;">
+        <engine:Instance template="Widget - Heart" name="heart-1" />
+        <engine:Instance template="Widget - Heart" name="heart-2" />
+        <engine:Instance template="Widget - Heart" name="heart-3" />
+    </engine:VisualElement>
+</engine:UXML>

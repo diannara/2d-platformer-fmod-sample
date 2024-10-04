@@ -1,0 +1,51 @@
+.background {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.loading-container {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    flex-direction: row;
+}
+
+.loading-text {
+    flex-shrink: 1;
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    -unity-font-definition: url("project://database/Assets/Kenney/kenney_ui-pack/Font/Kenney%20Future.ttf?fileID=12800000&guid=416267d24d4b868478004a6580257ad5&type=3#Kenney Future");
+    -unity-text-align: middle-center;
+}
+
+.loading-icon {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Kenney/kenney_ui-pack/PNG/Extra/Double/icon_repeat_outline.png?fileID=21300000&guid=80d4e670b453e99498642c1474be94df&type=3#icon_repeat_outline");
+    background-size: 90px 80px;
+    width: 100px;
+    height: 100px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    transition-timing-function: linear;
+    transition-property: rotate;
+    transition-duration: 3s;
+}
+
+.fmod-logo {
+    background-image: url("project://database/Assets/_Game/Sprites/FMOD%20Logo.png?fileID=2800000&guid=01399b35d0f02f94b965952926496d1f&type=3#FMOD Logo");
+    flex-grow: 1;
+}
+
+.fmod-container {
+    width: 256px;
+    height: 68px;
+    position: absolute;
+    left: 100px;
+    bottom: 65px;
+    flex-direction: row;
+}

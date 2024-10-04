@@ -1,0 +1,16 @@
+{
+    "name": "TIGD.Platformer.Animation",
+    "rootNamespace": "TIGD.Platformer.Animation",
+    "references": [
+        "GUID:47b0c9f6e9495684bbdb1e79ad372d93"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

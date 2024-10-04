@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+using TIGD.Platformer.Animation;
 using TIGD.Platformer.Controllers;
 
 namespace TIGD.Platformer.Input
 {
     [RequireComponent(typeof(PlayerController))]
+    [RequireComponent(typeof(PlayerAnimationHandler))]
     public class PlayerInputHandler : MonoBehaviour, InputMain.IPlayerActions
     {
         private InputMain _input;
+        private PlayerAnimationHandler _animationHandler;
         private PlayerController _controller;
 
         private Vector2 _moveVector;
@@ -22,6 +25,7 @@ namespace TIGD.Platformer.Input
 
         private void Awake()
         {
+            _animationHandler = GetComponent<PlayerAnimationHandler>();
             _controller = GetComponent<PlayerController>();
 
             _input = new InputMain();
@@ -100,6 +104,7 @@ namespace TIGD.Platformer.Input
             _interactedThisFrame = false;
             _jumpedThisFrame = false;
 
+            _animationHandler.SetInputs(ref input);
             _controller.SetInputs(ref input);
         }
     }

@@ -1,0 +1,4 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/UI%20Toolkit/Widgets/Heart/Widget%20-%20Heart.uss?fileID=7433441132597879392&amp;guid=62a71c65f489e8d4ca03f080d248fa57&amp;type=3#Widget - Heart" />
+    <engine:VisualElement name="heart" />
+</engine:UXML>

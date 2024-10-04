@@ -1,0 +1,13 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/UI/Common.uss?fileID=7433441132597879392&amp;guid=2329314e3bfa45248b1b55924f757b69&amp;type=3#Common" />
+    <Style src="project://database/Assets/_Game/UI/Overlays/Loading/Overlay%20-%20Loading.uss?fileID=7433441132597879392&amp;guid=9b662382fc4cc2f40b925c36607bc542&amp;type=3#Overlay - Loading" />
+    <engine:VisualElement name="background" class="background show">
+        <engine:VisualElement name="loading-container" class="loading-container" style="width: 550px;">
+            <engine:VisualElement name="loading-image" class="loading-icon" />
+            <engine:Label text="Loading..." name="loading-text" class="loading-text" />
+        </engine:VisualElement>
+        <engine:VisualElement name="fmod-container" class="fmod-container">
+            <engine:VisualElement name="fmod-logo" class="fmod-logo" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

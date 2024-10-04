@@ -3,7 +3,8 @@
     "rootNamespace": "TIGD.Platformer.Input",
     "references": [
         "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:47b0c9f6e9495684bbdb1e79ad372d93"
+        "GUID:47b0c9f6e9495684bbdb1e79ad372d93",
+        "GUID:56ce7089dc970504695728c062314a42"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

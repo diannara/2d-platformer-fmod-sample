@@ -1,0 +1,16 @@
+{
+    "name": "TIGD.Platformer.UI.Overlays",
+    "rootNamespace": "TIGD.Platformer.UI.Overlays",
+    "references": [
+        "GUID:4bcdc0eb41f14ca488096d75d54892e4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

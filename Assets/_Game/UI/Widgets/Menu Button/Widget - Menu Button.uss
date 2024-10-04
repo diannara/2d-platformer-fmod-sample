@@ -1,0 +1,8 @@
+.menu-button {
+    background-image: url("project://database/Assets/Kenney/kenney_ui-pack-space-expansion/PNG/Grey/Double/bar_square_gloss_large_square.png?fileID=21300000&guid=4780d100461c4a745b4de12ec84849f6&type=3#bar_square_gloss_large_square");
+    -unity-font-definition: resource('FlatSkin/Font/Roboto-Medium');
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
