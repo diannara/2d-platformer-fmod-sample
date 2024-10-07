@@ -13,9 +13,18 @@ namespace TIGD.UI.Overlays
 
         private VisualElement _root => _document.rootVisualElement;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             _document = GetComponent<UIDocument>();
+        }
+
+        protected T GetVisualElement<T>(string elementName) where T : VisualElement
+        {
+            if(string.IsNullOrEmpty(elementName) || _root == null)
+            {
+                return null;
+            }
+            return _root.Q(elementName) as T;
         }
 
         public override void Hide()

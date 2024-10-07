@@ -1,8 +1,14 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <engine:Template name="Widget - Healthbar" src="project://database/Assets/_Game/UI/Widgets/Healthbar/Widget%20-%20Healthbar.uxml?fileID=9197481963319205126&amp;guid=1331332b2664be94b8b1a31eae9becdb&amp;type=3#Widget - Healthbar" />
+    <engine:Template name="Widget - Timer" src="project://database/Assets/_Game/UI/Widgets/Timer/Widget%20-%20Timer.uxml?fileID=9197481963319205126&amp;guid=af74ec920fc0cec41a30e3d9419fe2e9&amp;type=3#Widget - Timer" />
+    <engine:Template name="Widget - Coin Counter" src="project://database/Assets/_Game/UI/Widgets/Coin%20Counter/Widget%20-%20Coin%20Counter.uxml?fileID=9197481963319205126&amp;guid=2132a75f7f90a874494b593cb8cef76f&amp;type=3#Widget - Coin Counter" />
     <Style src="project://database/Assets/_Game/UI/Common.uss?fileID=7433441132597879392&amp;guid=2329314e3bfa45248b1b55924f757b69&amp;type=3#Common" />
     <Style src="project://database/Assets/_Game/UI/Overlays/Gameplay/Overlay%20-%20Gameplay.uss?fileID=7433441132597879392&amp;guid=13e1021951255fe438d2ae11341e5105&amp;type=3#Overlay - Gameplay" />
-    <engine:VisualElement name="overlay-gameplay" class="show" style="flex-grow: 1;">
-        <engine:Instance template="Widget - Healthbar" name="healthbar" />
+    <engine:VisualElement name="overlay-gameplay" class="show container">
+        <engine:VisualElement name="topbar">
+            <engine:Instance template="Widget - Healthbar" name="healthbar" />
+            <engine:Instance template="Widget - Timer" name="timer" />
+            <engine:Instance template="Widget - Coin Counter" name="coin-counter" />
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

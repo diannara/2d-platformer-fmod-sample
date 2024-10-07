@@ -4,5 +4,9 @@
     font-size: 25px;
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px 5px rgb(255, 255, 255);
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+}
+
+.menu-button:hover {
+    background-image: url("project://database/Assets/Kenney/kenney_ui-pack-space-expansion/PNG/Grey/Double/bar_square_large_square.png?fileID=21300000&guid=8bb3cdbed1de7c34fb259fde365ce698&type=3#bar_square_large_square");
 }

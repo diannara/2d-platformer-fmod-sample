@@ -1,1 +1,17 @@
-VisualElement {}
+#heart-container {
+    background-image: url("project://database/Assets/Kenney/kenney_pixel-platformer/Tiles/tile_0046.png?fileID=21300000&guid=843a43c1e3b91774fbe901075c146de5&type=3#tile_0046");
+    width: 64px;
+    height: 64px;
+}
+
+#heart-container .full {
+    background-image: url("project://database/Assets/Kenney/kenney_pixel-platformer/Tiles/tile_0044.png?fileID=21300000&guid=cf6477acdca5dda459330239e9ba6f01&type=3#tile_0044");
+    width: 18px;
+    height: 18px;
+}
+
+#heart-container .half {
+    background-image: url("project://database/Assets/Kenney/kenney_pixel-platformer/Tiles/tile_0045.png?fileID=21300000&guid=f002938b29c6e694da91bcb28f99098b&type=3#tile_0045");
+    width: 18px;
+    height: 18px;
+}

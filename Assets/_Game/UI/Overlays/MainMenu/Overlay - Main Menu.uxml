@@ -2,14 +2,14 @@
     <engine:Template name="Widget - Menu Button" src="project://database/Assets/_Game/UI/Widgets/Menu%20Button/Widget%20-%20Menu%20Button.uxml?fileID=9197481963319205126&amp;guid=210527d8033cfed4695e2db7a7e4cc95&amp;type=3#Widget - Menu Button" />
     <Style src="project://database/Assets/_Game/UI/Common.uss?fileID=7433441132597879392&amp;guid=2329314e3bfa45248b1b55924f757b69&amp;type=3#Common" />
     <Style src="project://database/Assets/_Game/UI/Overlays/MainMenu/Overlay%20-%20Main%20Menu.uss?fileID=7433441132597879392&amp;guid=206be2f387a494540a86d18c51498e15&amp;type=3#Overlay - Main Menu" />
-    <engine:VisualElement name="main-menu-container" class="show container menu-content">
-        <engine:VisualElement name="main-menu" class="menu">
-            <engine:VisualElement name="main-menu-header" class="header">
-                <engine:Label text="Main Menu" name="menu-header-text" class="header-text" />
+    <engine:VisualElement name="main-menu-overlay" class="show overlay">
+        <engine:VisualElement name="dialog" class="dialog dialog__blue" style="width: 500px; height: 500px;">
+            <engine:VisualElement name="header" class="header">
+                <engine:Label text="Main Menu" name="header-text" class="header-text" />
             </engine:VisualElement>
-            <engine:VisualElement name="main-menu-buttons" class="content">
+            <engine:VisualElement name="content" class="content">
                 <engine:Instance template="Widget - Menu Button" name="play-game-button">
-                    <AttributeOverrides element-name="button" text="Play Game" emoji-fallback-support="false" />
+                    <AttributeOverrides element-name="button" text="Play Game" />
                 </engine:Instance>
                 <engine:Instance template="Widget - Menu Button" name="how-to-play-button">
                     <AttributeOverrides element-name="button" text="How to play" />
@@ -19,6 +19,9 @@
                 </engine:Instance>
                 <engine:Instance template="Widget - Menu Button" name="credits-button">
                     <AttributeOverrides element-name="button" text="Credits" />
+                </engine:Instance>
+                <engine:Instance template="Widget - Menu Button" name="quit-button">
+                    <AttributeOverrides element-name="button" text="Quit" />
                 </engine:Instance>
             </engine:VisualElement>
         </engine:VisualElement>

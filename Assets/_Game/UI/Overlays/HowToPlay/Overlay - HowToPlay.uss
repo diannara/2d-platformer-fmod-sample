@@ -1,0 +1,37 @@
+.input-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+
+.input-container > .input-prompt {
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container > .input-prompt__large {
+    flex-grow: 0;
+    background-size: 128px 128px;
+    flex-shrink: 0;
+}
+
+.input-container > .input-label {
+    -unity-font-definition: url("project://database/Assets/Kenney/kenney_ui-pack/Font/Kenney%20Future.ttf?fileID=12800000&guid=416267d24d4b868478004a6580257ad5&type=3#Kenney Future");
+    font-size: 40px;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-left;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}

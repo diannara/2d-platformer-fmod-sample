@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/UI/Widgets/Timer/Widget%20-%20Timer.uss?fileID=7433441132597879392&amp;guid=f935da602154e9b4895a5a8c6f017617&amp;type=3#Widget - Timer" />
+    <engine:VisualElement name="timer-container">
+        <engine:Label text="99:99" name="timer-text" />
+    </engine:VisualElement>
+</engine:UXML>

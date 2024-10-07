@@ -1,1 +1,7 @@
-VisualElement {}
+#hearts-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    max-width: 200px;
+}

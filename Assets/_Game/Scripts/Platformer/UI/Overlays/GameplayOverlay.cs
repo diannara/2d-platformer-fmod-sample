@@ -1,19 +1,8 @@
-using UnityEngine;
+using TIGD.UI.Overlays;
 
-namespace TIGD
+namespace TIGD.Platformer.UI.Overlays
 {
-    public class GameplayOverlay : MonoBehaviour
+    public class GameplayOverlay : VisualElementOverlay
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
     }
 }

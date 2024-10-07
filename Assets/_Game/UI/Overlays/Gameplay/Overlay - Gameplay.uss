@@ -1,1 +1,14 @@
-VisualElement {}
+#overlay-gameplay #topbar {
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 0;
+    margin-left: 25px;
+    background-image: url("project://database/Assets/Kenney/kenney_ui-pack-space-expansion/PNG/Extra/Double/button_rectangle.png?fileID=21300000&guid=d26e5086770af234d862e1ab22919352&type=3#button_rectangle");
+    -unity-background-image-tint-color: rgb(217, 217, 217);
+}

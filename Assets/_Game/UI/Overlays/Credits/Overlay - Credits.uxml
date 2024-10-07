@@ -1,0 +1,3 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/UI/Overlays/Credits/Overlay%20-%20Credits.uss?fileID=7433441132597879392&amp;guid=29ee6095ed24ca8409997d71fd6f4a77&amp;type=3#Overlay - Credits" />
+</engine:UXML>

@@ -1,16 +1,14 @@
 using UnityEngine;
 
-using TIGD.Platformer.UI.Overlays;
 using TIGD.SceneManagement;
 using TIGD.SceneManagement.Services;
 using TIGD.Services;
-using TIGD.UI.Services;
 
 namespace TIGD.Platformer.SceneManagement
 {
-    public class SceneEventHandler : MonoBehaviour
+    public abstract class SceneEventHandler : MonoBehaviour
     {
-        [SerializeField] private GameScene _currentScene;
+        [SerializeField] protected GameScene _currentScene;
 
         private void OnDisable()
         {
@@ -28,18 +26,6 @@ namespace TIGD.Platformer.SceneManagement
             }
         }
 
-        private void SceneService_OnSceneLoaded(string sceneName)
-        {
-            if(!sceneName.Equals(_currentScene.DisplayName))
-            {
-                return;
-            }
-
-            if(ServiceLocator.TryGet(out OverlayService overlayService))
-            {
-                overlayService.TryHide<LoadingOverlay>();
-                overlayService.TryShow<MainMenuOverlay>();
-            }
-        }
+        public abstract void SceneService_OnSceneLoaded(string sceneName);
     }
 }

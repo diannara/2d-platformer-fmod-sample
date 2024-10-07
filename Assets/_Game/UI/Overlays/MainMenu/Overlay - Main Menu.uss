@@ -1,22 +1,10 @@
-#main-menu-container {
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-#main-menu {
-    background-image: url("project://database/Assets/Kenney/kenney_ui-pack-space-expansion/PNG/Blue/Double/button_square_header_large_square_screws.png?fileID=21300000&guid=99cf527fcd886d945a1270293fb2bb23&type=3#button_square_header_large_square_screws");
-    -unity-slice-left: 24;
-    -unity-slice-top: 68;
-    -unity-slice-right: 24;
-    -unity-slice-bottom: 24;
-    width: 500px;
-    height: 500px;
-}
-
-#play-game-button .menu-button {
+#play-game-button > .menu-button {
     font-size: 50px;
     background-image: url("project://database/Assets/Kenney/kenney_ui-pack-space-expansion/PNG/Blue/Double/bar_square_gloss_large_square.png?fileID=21300000&guid=1c2dabbc8ccd61f42904f63f2469cc4b&type=3#bar_square_gloss_large_square");
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+#play-game-button > .menu-button:hover {
+    background-image: url("project://database/Assets/Kenney/kenney_ui-pack-space-expansion/PNG/Blue/Double/bar_square_large_square.png?fileID=21300000&guid=292f7edd9e4b0b946b78edd94c07c969&type=3#bar_square_large_square");
 }

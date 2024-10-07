@@ -1,0 +1,35 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Widget - Menu Button" src="project://database/Assets/_Game/UI/Widgets/Menu%20Button/Widget%20-%20Menu%20Button.uxml?fileID=9197481963319205126&amp;guid=210527d8033cfed4695e2db7a7e4cc95&amp;type=3#Widget - Menu Button" />
+    <Style src="project://database/Assets/_Game/UI/Common.uss?fileID=7433441132597879392&amp;guid=2329314e3bfa45248b1b55924f757b69&amp;type=3#Common" />
+    <Style src="project://database/Assets/_Game/UI/Overlays/HowToPlay/Overlay%20-%20HowToPlay.uss?fileID=7433441132597879392&amp;guid=a519a87da7c51ef4c9231fd8d2a2fe57&amp;type=3#Overlay - HowToPlay" />
+    <engine:VisualElement name="howtoplay-overlay" class="overlay">
+        <engine:VisualElement name="dialog-window" class="dialog dialog__blue" style="width: 700px; height: 600px;">
+            <engine:VisualElement name="header" class="header">
+                <engine:Label text="How to play" name="header-text" class="header-text" />
+            </engine:VisualElement>
+            <engine:VisualElement name="content" class="content">
+                <engine:VisualElement name="input-container-movement" class="input-container">
+                    <engine:VisualElement name="input-prompts" class="input-prompt" style="flex-grow: 1;">
+                        <engine:VisualElement name="input-prompt-wsad" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_a_outline.png?fileID=21300000&amp;guid=501ff6fd18d1cc04297c03b7290a049c&amp;type=3#keyboard_a_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214); width: 64px; height: 64px;" />
+                        <engine:VisualElement name="input-prompt-dpad" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_d_outline.png?fileID=21300000&amp;guid=e482275827926484491dba4720c40704&amp;type=3#keyboard_d_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214); width: 64px; height: 64px;" />
+                        <engine:VisualElement name="input-prompt-stick" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_d_outline.png?fileID=21300000&amp;guid=e482275827926484491dba4720c40704&amp;type=3#keyboard_d_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214); width: 64px; height: 64px;" />
+                    </engine:VisualElement>
+                    <engine:Label text="Movement" name="input-label" class="input-label" style="height: 64px;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="input-container-jump" class="input-container">
+                    <engine:VisualElement name="input-prompt" class="input-prompt__large" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_space_outline.png?fileID=21300000&amp;guid=1dadbc2080e90344db8220b97731e217&amp;type=3#keyboard_space_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214);" />
+                    <engine:Label text="Jump" name="input-label" class="input-label" />
+                </engine:VisualElement>
+                <engine:VisualElement name="input-container-shoot" class="input-container">
+                    <engine:VisualElement name="input-prompt" class="input-prompt__large" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/mouse_left_outline.png?fileID=21300000&amp;guid=1fed7517cc1c8284689a42825627527b&amp;type=3#mouse_left_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214);" />
+                    <engine:Label text="Shoot" name="input-label" class="input-label" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="footer" class="footer">
+                <engine:Instance template="Widget - Menu Button" name="back-button">
+                    <AttributeOverrides element-name="button" text="Back to Main Menu" />
+                </engine:Instance>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
