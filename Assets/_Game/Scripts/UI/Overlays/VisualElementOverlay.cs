@@ -27,6 +27,12 @@ namespace TIGD.UI.Overlays
             return _root.Q(elementName) as T;
         }
 
+        protected Button GetButtonElement(string templateId, string buttonId = "button")
+        {
+            VisualElement template = GetVisualElement<VisualElement>(templateId);
+            return template.Q<Button>(buttonId);
+        }
+
         public override void Hide()
         {
             _root.RemoveFromClassList(SHOW_CLASS);

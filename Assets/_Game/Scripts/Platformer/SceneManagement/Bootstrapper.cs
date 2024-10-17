@@ -13,7 +13,7 @@ namespace TIGD.Platformer.SceneManagement
     {
         private const string BOOTSTRAP_SCENE_NAME = "Bootstrap";
 
-        [SerializeField] private GameScene _commonAssetsScene;
+        [SerializeField] private GameScene[] _commonAssetsScenes;
         [SerializeField] private GameScene _mainMenuScene;
 
         private async void Start()
@@ -30,8 +30,8 @@ namespace TIGD.Platformer.SceneManagement
 
             LoadingProgress progress = new LoadingProgress();
 
-            // Load the common assets scene
-            await sceneService.LoadScene(_commonAssetsScene, progress);
+            // Load the common assets scenes
+            await sceneService.LoadScenes(_commonAssetsScenes, progress);
 
             // display loading screen
             if(ServiceLocator.TryGet(out OverlayService overlayService))

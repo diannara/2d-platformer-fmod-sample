@@ -2,7 +2,8 @@
     "name": "TIGD.Audio.FMOD",
     "rootNamespace": "TIGD.Audio.FMOD",
     "references": [
-        "GUID:0c752da273b17c547ae705acf0f2adf2"
+        "GUID:0c752da273b17c547ae705acf0f2adf2",
+        "GUID:9a6258c5a9153d1489af984db8d4b2f7"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

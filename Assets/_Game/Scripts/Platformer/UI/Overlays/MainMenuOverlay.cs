@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
 
+using TIGD.Platformer.UI.Widgets;
 using TIGD.SceneManagement;
 using TIGD.SceneManagement.Services;
 using TIGD.Services;
@@ -25,25 +26,44 @@ namespace TIGD.Platformer.UI.Overlays
         private Button _creditsButton;
         private Button _quitButton;
 
+        private ButtonEventHandler _buttonEventHandler;
+
         protected override void Awake()
         {
             base.Awake();
+
+            _buttonEventHandler = GetComponent<ButtonEventHandler>();
+
             SetVisualElements();
             RegisterButtonCallbacks();
         }
 
         private void OnCreditsClicked(ClickEvent evt)
         {
-            Debug.Log("Credits clicked");
+            PlayButtonClick();
+
+            if(ServiceLocator.TryGet(out OverlayService overlayService))
+            {
+                overlayService.TryShow<CreditsOverlay>();
+                overlayService.TryHide<MainMenuOverlay>();
+            }
         }
 
         private void OnHowToPlayClicked(ClickEvent evt)
         {
-            Debug.Log("How to play clicked");
+            PlayButtonClick();
+
+            if(ServiceLocator.TryGet(out OverlayService overlayService))
+            {
+                overlayService.TryShow<HowToPlayOverlay>();
+                overlayService.TryHide<MainMenuOverlay>();
+            }
         }
 
         private async void OnPlayGameClicked(ClickEvent evt)
         {
+            PlayButtonClick();
+
             if(ServiceLocator.TryGet(out OverlayService overlayService))
             {
                 overlayService.TryShow<LoadingOverlay>();
@@ -59,6 +79,8 @@ namespace TIGD.Platformer.UI.Overlays
 
         private void OnQuitGameClicked(ClickEvent evt)
         {
+            PlayButtonClick();
+
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #elif UNITY_WEBGL
@@ -70,7 +92,23 @@ namespace TIGD.Platformer.UI.Overlays
         
         private void OnSettingsClicked(ClickEvent evt)
         {
-            Debug.Log("Settings clicked");
+            PlayButtonClick();
+
+            if(ServiceLocator.TryGet(out OverlayService overlayService))
+            {
+                overlayService.TryShow<SettingsOverlay>();
+                overlayService.TryHide<MainMenuOverlay>();
+            }
+        }
+
+        private void PlayButtonClick()
+        {
+            if(_buttonEventHandler == null)
+            {
+                return;
+            }
+
+            _buttonEventHandler.OnButtonClicked();
         }
         
         private void RegisterButtonCallbacks()
@@ -80,12 +118,24 @@ namespace TIGD.Platformer.UI.Overlays
             _settingsButton.RegisterCallback<ClickEvent>(OnSettingsClicked);
             _creditsButton.RegisterCallback<ClickEvent>(OnCreditsClicked);
             _quitButton.RegisterCallback<ClickEvent>(OnQuitGameClicked);
-        }
 
-        private Button GetButtonElement(string templateId, string buttonId = "button")
-        {
-            VisualElement template = GetVisualElement<VisualElement>(templateId);
-            return template.Q<Button>(buttonId);
+            if(_buttonEventHandler != null)
+            {
+                _playGameButton.RegisterCallback<MouseEnterEvent>(evt => _buttonEventHandler.OnButtonEnter());
+                _playGameButton.RegisterCallback<MouseLeaveEvent>(evt => _buttonEventHandler.OnButtonExit());
+
+                _howToPlayButton.RegisterCallback<MouseEnterEvent>(evt => _buttonEventHandler.OnButtonEnter());
+                _howToPlayButton.RegisterCallback<MouseLeaveEvent>(evt => _buttonEventHandler.OnButtonExit());
+
+                _settingsButton.RegisterCallback<MouseEnterEvent>(evt => _buttonEventHandler.OnButtonEnter());
+                _settingsButton.RegisterCallback<MouseLeaveEvent>(evt => _buttonEventHandler.OnButtonExit());
+
+                _creditsButton.RegisterCallback<MouseEnterEvent>(evt => _buttonEventHandler.OnButtonEnter());
+                _creditsButton.RegisterCallback<MouseLeaveEvent>(evt => _buttonEventHandler.OnButtonExit());
+
+                _quitButton.RegisterCallback<MouseEnterEvent>(evt => _buttonEventHandler.OnButtonEnter());
+                _quitButton.RegisterCallback<MouseLeaveEvent>(evt => _buttonEventHandler.OnButtonExit());
+            }
         }
 
         private void SetVisualElements()

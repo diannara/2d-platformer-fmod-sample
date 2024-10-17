@@ -1,31 +1,49 @@
 .input-container {
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     height: 100px;
 }
 
-.input-container > .input-prompt {
+.input-container > .input-prompts > .input-prompt {
     background-size: 64px 64px;
     width: 64px;
     height: 64px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    -unity-background-image-tint-color: rgb(27, 159, 214);
 }
 
-.input-container > .input-prompt__large {
+.input-container > .input-prompts > .input-prompt__large {
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -unity-background-image-tint-color: rgb(27, 159, 214);
+}
+
+.input-container > .input-prompts {
+    background-size: 64px 64px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     flex-grow: 0;
-    background-size: 128px 128px;
-    flex-shrink: 0;
+    width: 40%;
 }
 
-.input-container > .input-label {
+.input-container > .label-container {
+    flex-grow: 1;
+    margin-left: 25px;
+}
+
+.input-container > .label-container > .input-label {
     -unity-font-definition: url("project://database/Assets/Kenney/kenney_ui-pack/Font/Kenney%20Future.ttf?fileID=12800000&guid=416267d24d4b868478004a6580257ad5&type=3#Kenney Future");
-    font-size: 40px;
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     -unity-text-align: middle-left;
+    font-size: 40px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;

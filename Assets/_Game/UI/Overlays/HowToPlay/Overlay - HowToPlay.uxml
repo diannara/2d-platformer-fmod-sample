@@ -8,21 +8,32 @@
                 <engine:Label text="How to play" name="header-text" class="header-text" />
             </engine:VisualElement>
             <engine:VisualElement name="content" class="content">
+                <engine:Label text="Collect coins, try not to die and reach the flag at the end!" name="text" class="text" style="font-size: 30px; margin-bottom: 50px;" />
                 <engine:VisualElement name="input-container-movement" class="input-container">
-                    <engine:VisualElement name="input-prompts" class="input-prompt" style="flex-grow: 1;">
-                        <engine:VisualElement name="input-prompt-wsad" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_a_outline.png?fileID=21300000&amp;guid=501ff6fd18d1cc04297c03b7290a049c&amp;type=3#keyboard_a_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214); width: 64px; height: 64px;" />
-                        <engine:VisualElement name="input-prompt-dpad" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_d_outline.png?fileID=21300000&amp;guid=e482275827926484491dba4720c40704&amp;type=3#keyboard_d_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214); width: 64px; height: 64px;" />
-                        <engine:VisualElement name="input-prompt-stick" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_d_outline.png?fileID=21300000&amp;guid=e482275827926484491dba4720c40704&amp;type=3#keyboard_d_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214); width: 64px; height: 64px;" />
+                    <engine:VisualElement name="input-prompts" class="input-prompts">
+                        <engine:VisualElement name="input-prompt-wsad" class="input-prompt" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_arrows_horizontal.png?fileID=21300000&amp;guid=4cf427ad91bedb34b859ddf90601d47b&amp;type=3#keyboard_arrows_horizontal&quot;);" />
+                        <engine:VisualElement name="input-prompt-dpad" class="input-prompt" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Xbox%20Series/Double/xbox_dpad_horizontal.png?fileID=21300000&amp;guid=4d0025f8ab4d02c4aadcad639e7f5416&amp;type=3#xbox_dpad_horizontal&quot;);" />
+                        <engine:VisualElement name="input-prompt-stick" class="input-prompt" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Xbox%20Series/Double/xbox_stick_l_horizontal.png?fileID=21300000&amp;guid=bb7f9df4f912c3b4bb00f97b68dc846b&amp;type=3#xbox_stick_l_horizontal&quot;);" />
                     </engine:VisualElement>
-                    <engine:Label text="Movement" name="input-label" class="input-label" style="height: 64px;" />
+                    <engine:VisualElement name="label-container" class="label-container">
+                        <engine:Label text="Movement" name="input-label" class="input-label" style="height: 64px;" />
+                    </engine:VisualElement>
                 </engine:VisualElement>
                 <engine:VisualElement name="input-container-jump" class="input-container">
-                    <engine:VisualElement name="input-prompt" class="input-prompt__large" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_space_outline.png?fileID=21300000&amp;guid=1dadbc2080e90344db8220b97731e217&amp;type=3#keyboard_space_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214);" />
-                    <engine:Label text="Jump" name="input-label" class="input-label" />
+                    <engine:VisualElement name="input-prompts" class="input-prompts">
+                        <engine:VisualElement name="input-prompt" class="input-prompt__large" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/keyboard_space_outline.png?fileID=21300000&amp;guid=1dadbc2080e90344db8220b97731e217&amp;type=3#keyboard_space_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214);" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="label-container" class="label-container">
+                        <engine:Label text="Jump" name="input-label" class="input-label" />
+                    </engine:VisualElement>
                 </engine:VisualElement>
                 <engine:VisualElement name="input-container-shoot" class="input-container">
-                    <engine:VisualElement name="input-prompt" class="input-prompt__large" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/mouse_left_outline.png?fileID=21300000&amp;guid=1fed7517cc1c8284689a42825627527b&amp;type=3#mouse_left_outline&quot;); -unity-background-image-tint-color: rgb(27, 159, 214);" />
-                    <engine:Label text="Shoot" name="input-label" class="input-label" />
+                    <engine:VisualElement name="input-prompts" class="input-prompts">
+                        <engine:VisualElement name="input-prompt" class="input-prompt__large" style="background-image: url(&quot;project://database/Assets/Kenney/kenney_input-prompts/Keyboard%20&amp;%20Mouse/Double/mouse_left_outline.png?fileID=21300000&amp;guid=1fed7517cc1c8284689a42825627527b&amp;type=3#mouse_left_outline&quot;);" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="label-container" class="label-container">
+                        <engine:Label text="Shoot" name="input-label" class="input-label" />
+                    </engine:VisualElement>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement name="footer" class="footer">

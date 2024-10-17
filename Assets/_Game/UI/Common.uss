@@ -86,3 +86,19 @@
     transition-delay: 0s, 0ms;
     transition-timing-function: linear, ease;
 }
+
+.text {
+    -unity-font-definition: url("project://database/Assets/Kenney/kenney_ui-pack/Font/Kenney%20Future.ttf?fileID=12800000&guid=416267d24d4b868478004a6580257ad5&type=3#Kenney Future");
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    white-space: normal;
+}

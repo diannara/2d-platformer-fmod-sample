@@ -1,3 +1,31 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Widget - Menu Button" src="project://database/Assets/_Game/UI/Widgets/Menu%20Button/Widget%20-%20Menu%20Button.uxml?fileID=9197481963319205126&amp;guid=210527d8033cfed4695e2db7a7e4cc95&amp;type=3#Widget - Menu Button" />
+    <Style src="project://database/Assets/_Game/UI/Common.uss?fileID=7433441132597879392&amp;guid=2329314e3bfa45248b1b55924f757b69&amp;type=3#Common" />
     <Style src="project://database/Assets/_Game/UI/Overlays/Settings/Overlay%20-%20Settings.uss?fileID=7433441132597879392&amp;guid=859d07219bce9354994a3b9794497ad4&amp;type=3#Overlay - Settings" />
+    <engine:VisualElement name="settings-overlay" class="overlay">
+        <engine:VisualElement name="dialog-window" class="dialog dialog__blue" style="width: 700px; height: 600px;">
+            <engine:VisualElement name="header" class="header">
+                <engine:Label text="Settings" name="header-text" class="header-text" />
+            </engine:VisualElement>
+            <engine:VisualElement name="content" class="content">
+                <engine:VisualElement name="volume-control" class="volume-control">
+                    <engine:Slider label="Master" value="42" high-value="100" />
+                </engine:VisualElement>
+                <engine:VisualElement name="volume-control" class="volume-control">
+                    <engine:Slider label="Music" value="42" high-value="100" />
+                </engine:VisualElement>
+                <engine:VisualElement name="volume-control" class="volume-control">
+                    <engine:Slider label="Sound FX" value="42" high-value="100" />
+                </engine:VisualElement>
+                <engine:VisualElement name="volume-control" class="volume-control">
+                    <engine:Slider label="UI" value="42" high-value="100" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="footer" class="footer">
+                <engine:Instance template="Widget - Menu Button" name="back-button">
+                    <AttributeOverrides element-name="button" text="Back to Main Menu" />
+                </engine:Instance>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
 </engine:UXML>

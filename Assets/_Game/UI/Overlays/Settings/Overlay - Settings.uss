@@ -1,0 +1,51 @@
+.volume-control {
+}
+
+.volume-control > .unity-slider {
+}
+
+.volume-control > .unity-slider > .unity-label {
+    -unity-font-definition: url("project://database/Assets/Kenney/kenney_ui-pack/Font/Kenney%20Future.ttf?fileID=12800000&guid=416267d24d4b868478004a6580257ad5&type=3#Kenney Future");
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+    -unity-text-align: middle-left;
+    white-space: normal;
+    font-size: 20px;
+}
+
+.volume-control > .unity-slider > .unity-slider__input > .unity-base-slider__drag-container > .unity-base-slider__dragger {
+    background-image: url("project://database/Assets/Kenney/kenney_ui-pack/PNG/Blue/Double/slide_hangle.png?fileID=21300000&guid=41090080ffc730348807cd030d48cf70&type=3#slide_hangle");
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.volume-control > .unity-slider > .unity-slider__input > .unity-base-slider__drag-container > .unity-base-slider__tracker {
+    background-image: url("project://database/Assets/Kenney/kenney_ui-pack/PNG/Blue/Double/slide_horizontal_color.png?fileID=21300000&guid=5411672cb33110940aaa182ab0552acd&type=3#slide_horizontal_color");
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 16px;
+}
